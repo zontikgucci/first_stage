@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.phone {
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 106px;
+  color: $black;
+  text-decoration: underline;
+  transition: color $animation;
+
+  &:hover {
+    color: $black_hover;
+  }
+
+  &:active {
+    transition: none;
+    color: $black;
+  }
+}

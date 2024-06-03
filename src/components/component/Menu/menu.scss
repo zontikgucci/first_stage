@@ -1,0 +1,79 @@
+@import '../../../styles/variables';
+
+.menu {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 0 10px;
+  }
+
+  &__link {
+    padding: 8px 10px;
+    font-weight: 400;
+    font-size: 12px;
+    color: $black;
+    transition: color $animation ;
+
+    &:hover {
+      color: $black_hover;
+    }
+
+    &:active {
+      transition: none;
+      color: $black;
+    }
+  }
+}
+
+.window {
+  position: relative;
+
+  &:hover {
+    .window__list {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .menu__link {
+      color: $black_hover;
+    }
+  }
+
+  &__list {
+    visibility: hidden;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    min-width: 100%;
+    opacity: 0;
+    transition: all $animation;
+    border: 1px solid $black;
+    border-radius: 2px;
+    background: $silver;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    padding: 0 10px;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: $black;
+    transition: color $animation;
+
+    &:hover {
+      color: $black_hover;
+    }
+
+    &:active {
+      transition: none;
+      color: $black;
+    }
+  }
+}
