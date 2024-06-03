@@ -24,6 +24,7 @@ export const Menu = () => {
             <li className="window__item"><a href="javascipt:void(0)" className="window__link">Отзывы</a></li>
             <li className="window__item"><a href="javascipt:void(0)" className="window__link">Гарантии</a></li>
           </ul>
+          <span className='window__triangle'></span>
         </li>
       </ul>
     </nav>

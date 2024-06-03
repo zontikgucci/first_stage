@@ -32,6 +32,34 @@
 .window {
   position: relative;
 
+  &__triangle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right:0;
+    width: 5.8px;
+    height: 5.8px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translateY(-50%) rotate(180deg);
+    
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      width: 0;
+      height: 0;
+      border-left: 3.3px solid transparent;
+      border-right: 3.3px solid transparent;
+      border-bottom: 5px solid $black;
+      opacity: 0;
+      transition: all $animation;
+    }
+  }
+
   &:hover {
     .window__list {
       visibility: visible;
@@ -40,6 +68,11 @@
 
     .menu__link {
       color: $black_hover;
+    }
+
+    .window__triangle::before {
+      opacity: 1;
+      border-bottom-color: $black_hover;
     }
   }
 
