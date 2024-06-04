@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+
+
+.logo {
+  display: inline-block;
+  padding: 7.6px 14px;
+  background: $silver_img;
+  color: $black;
+  text-align: center;
+  margin-right: 40px;
+
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase
+  }
+
+  &__specialization {
+    font-size: 10px;
+    opacity: 0.4;
+  }
+}
