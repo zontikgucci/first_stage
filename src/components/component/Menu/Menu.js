@@ -5,24 +5,24 @@ export const Menu = () => {
     <nav className='menu'>
       <ul className="menu__list">
        <li className="menu__item">
-          <a href="javascipt:void(0)" className="menu__link">Как заказать</a>
+          <a href="$" className="menu__link" title='Как заказать' onClick={e => e.preventDefault()}>Как заказать</a>
         </li>
         <li className="menu__item">
-          <a href="javascipt:void(0)" className="menu__link">Доставка и оплата</a>
+          <a href="$" className="menu__link" title='Доставка и оплата' onClick={e => e.preventDefault()}>Доставка и оплата</a>
         </li>
         <li className="menu__item">
-          <a href="javascipt:void(0)" className="menu__link">Кредит и рассрочка</a>
+          <a href="$" className="menu__link" title='Кредит и рассрочка' onClick={e => e.preventDefault()}>Кредит и рассрочка</a>
         </li>
        <li className="menu__item">
-          <a href="javascipt:void(0)" className="menu__link">Сборка</a>
+          <a href="$" className="menu__link" title='Сборка' onClick={e => e.preventDefault()}>Сборка</a>
         </li>
        <li className="menu__item window">
-          <a href="javascipt:void(0)" className="menu__link">Частые вопросы</a>
+          <a href="$" className="menu__link" title='Частые вопросы' onClick={e => e.preventDefault()}>Частые вопросы</a>
           <ul className="window__list">
             <li className="window__item">
-              <a href="javascipt:void(0)" className="window__link">О нас</a></li>
-            <li className="window__item"><a href="javascipt:void(0)" className="window__link">Отзывы</a></li>
-            <li className="window__item"><a href="javascipt:void(0)" className="window__link">Гарантии</a></li>
+              <a href="$" className="window__link" title='О нас' onClick={e => e.preventDefault()}>О нас</a></li>
+            <li className="window__item"><a href="$" className="window__link" title='Отзывы' onClick={e => e.preventDefault()}>Отзывы</a></li>
+            <li className="window__item"><a href="$" className="window__link" title='Гарантии' onClick={e => e.preventDefault()}>Гарантии</a></li>
           </ul>
           <span className='window__triangle'></span>
         </li>

@@ -79,7 +79,7 @@
   &__list {
     visibility: hidden;
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 10px;
     min-width: 100%;
     opacity: 0;
@@ -93,7 +93,7 @@
   }
 
   &__link {
-    padding: 0 10px;
+    padding: 8px 10px;
     display: block;
     font-weight: 400;
     font-size: 12px;
