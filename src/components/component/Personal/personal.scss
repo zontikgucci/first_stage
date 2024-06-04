@@ -1,1 +1,78 @@
-@import '../../../styles/variables'
+@import '../../../styles/variables';
+
+
+.pesonal {
+  display: flex;
+  margin-left: auto;
+
+  &__item {
+
+    &:last-child {
+      .pesonal__link{
+        padding-right: 0;
+      }
+    }
+
+    &.no-active {
+      opacity: .4;
+      pointer-events: none
+    }
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+
+    &:hover {
+      .pesonal__text {
+        color: $black_hover;
+      }
+      .pesonal__img {
+        fill: $black_hover;
+      }
+    }
+
+    &:active {
+      .pesonal__text {
+        color: $black;
+        transition: none;
+      }
+      .pesonal__img {
+        fill: $black;
+        transition: none;
+      }
+    }
+  }
+
+
+  &__text {
+    color: $black;
+    margin-right: 5px;
+    transition: color $animation;
+  }
+
+
+  &__img {
+    width: 19px;
+    height: 19px;
+    fill: $black;
+    transition: fill $animation;
+  }
+
+  &__count {
+    font-weight: 700;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: $silver_img;
+    padding-top: 2px;
+    color: $black;
+    margin-left: 5px;
+  }
+}
