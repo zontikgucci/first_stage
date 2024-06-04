@@ -3,10 +3,16 @@
 .header {
   background-color: $silver;
 
-  &__body {
+  &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid $black_03;
     padding: 8px 0;
+  }
+
+  &__under {
+    padding: 22px 0;
+    display: flex;
   }
 }
