@@ -4,9 +4,71 @@
 .footer {
   background-color: $black;
   padding-top: 47px;
-  padding-bottom: 103px;
+  padding-bottom: 60px;
 
   &__top {
+    margin-bottom: 103px;
+  }
+
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    columns: 2;
+    column-gap: 190px;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 140%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: $white;
+    transition: color $animation;
+
+    &:hover {
+      color: $black_hover;
+    }
+
+    &:active {
+      transition: none;
+      color: $white;
+    }
+    
+  }
+
+  &__privacy {
+  }
+
+  &__policy {
+    display: block;
+    font-size: 14px;
+    line-height: 140%;
+    color: $white;
+    transition: $animation;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: $black_hover;
+    }
+
+    &:active {
+      transition: none;
+      color: $white;
+    }
+  }
+
+  &__protect {
+    color: $white;
+    opacity: 0.6;
   }
 }
 
@@ -142,9 +204,60 @@
   }
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
-  background-color: transparent;
+.connection {
+
+  &__item {
+    text-align: right;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &--margin {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    display:  block;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: $white;
+    transition: $animation;
+
+    &:hover {
+      color: $black_hover;
+    }
+
+    &:active {
+      transition: none;
+      color: $white;
+    }
+
+    &--social {
+      display: inline-block;
+      font-weight: 300;
+      line-height: 140%;
+      text-decoration: none;
+      opacity: .6;
+
+      &:hover {
+        color: $white;
+        opacity: .8;
+      }
+
+      &:active {
+        color: $white;
+        opacity: 1;
+      }
+    }
+
+    &--tel {
+      font-size: 12px;
+    }
+  }
+
 }
