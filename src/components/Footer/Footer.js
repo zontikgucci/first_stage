@@ -126,6 +126,32 @@ export const Footer = () => {
               </div>
             </form>
         </div>
+        <div className="footer__bottom">
+          <div className="footer__information">
+            <ul className="footer__list">
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>О нас</a></li>
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>Как сделать заказ</a></li>
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>Доставка</a></li>
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>Гарантия</a></li>
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>Сборка</a></li>
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>Адреса магазинов</a></li>
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>Вакансии</a></li>
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>Блог</a></li>
+              <li className="footer__item"><a href="$" className="footer__link" onClick={e => e.preventDefault()}>Отзывы</a></li>
+            </ul>
+            <ul className="connection">
+              <li className="connection__item"><a href="$" className="connection__link connection__link--social" onClick={e => e.preventDefault()}>Инстаграм</a></li>
+              <li className="connection__item"><a href="$" className="connection__link connection__link--social" onClick={e => e.preventDefault()}>Фейсбук</a></li>
+              <li className="connection__item connection__item--margin"><a href="$" className="connection__link connection__link--social" onClick={e => e.preventDefault()}>Вконтакте</a></li>
+              <li className="connection__item"><a href="tel:+73472926252" className="connection__link connection__link--tel">+7 (347) 292-62-52</a></li>
+              <li className="connection__item"><a href="mailto:info@mebelhol.ru" className="connection__link">info@mebelhol.ru</a></li>
+            </ul>
+          </div>
+          <div className="footer__privacy">
+            <a href="$" className="footer__policy" onClick={e => e.preventDefault()}>Политика конфиденциальности</a>
+            <p className="footer__protect">2020, МебельХолл. Все права защищены</p>
+          </div>
+        </div>
       </div>
       <div className={`subscription ${sub ? 'subscription--active' : ''}`} >
         <p className='subscription__text'>Отправлено</p>
