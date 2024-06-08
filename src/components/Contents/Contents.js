@@ -1,9 +1,9 @@
 import { Head } from '../component/Head/Head'
-import './main.scss'
+import './contents.scss'
 
-export const Main = () => {
+export const Contents = () => {
   return (
-    <main className='main'>
+    <main className='contents'>
       <Head head={'Спальня'}/>
       <section className='content'></section>
       <section className='compilation'></section>
