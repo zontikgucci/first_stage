@@ -1,13 +1,13 @@
 import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
-import { Main } from "../components/Main/Main"
+import { Contents } from "../components/Contents/Contents"
 
 
 export const Home = () => {
   return (
     <>
       <Header/>
-      <Main/>
+      <Contents/>
       <Footer/>
     </>
   )
