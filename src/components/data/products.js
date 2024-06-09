@@ -9,7 +9,7 @@ export const products = [
     checked: false,
     absent: false,
     rating: {
-      rate: 3.9,
+      rate: 3.4,
       count: 120
     }
   },
@@ -23,7 +23,7 @@ export const products = [
     checked: false,
     absent: false,
     rating: {
-      rate: 4.2,
+      rate: 5,
       count: 200
     }
   },
@@ -51,7 +51,7 @@ export const products = [
     checked: false,
     absent: false,
     rating: {
-      rate: 3.2,
+      rate: 2.5,
       count: 148
     }
   },
@@ -65,7 +65,7 @@ export const products = [
     checked: false,
     absent: false,
     rating: {
-      rate: 4.5,
+      rate: 2.5,
       count: 234
     }
   },
@@ -79,7 +79,7 @@ export const products = [
     checked: false,
     absent: false,
     rating: {
-      rate: 4.9,
+      rate: 2,
       count: 209
     }
   },
@@ -93,7 +93,7 @@ export const products = [
     checked: false,
     absent: false,
     rating: {
-      rate: 3.9,
+      rate: 3.5,
       count: 20
     }
   },
