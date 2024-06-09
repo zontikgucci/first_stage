@@ -1,0 +1,139 @@
+@import '../../../styles/variables';
+
+.card {
+  min-width: 0;
+  position: relative;
+
+  &__item {
+    height: 408px;
+    padding: 0 15px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    background-color: $white;
+  }
+
+  &__top {
+    padding: 0;
+    min-height: 216px;
+    background-color: $silver_img;
+    margin: 0 -15px;
+    margin-bottom: 15px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  &__discount {
+  }
+
+  &__img {
+
+  }
+
+  &__rating {
+    margin-bottom: 15px;
+  }
+
+  &__star {
+  
+    .MuiRating-iconFilled {
+      color: $black;
+    }
+    .MuiRating-iconEmpty {
+      color: $black;
+    }
+
+    .MuiRating-icon {
+      font-size: 20px;
+    }
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__value {
+    margin-bottom: 25px;
+  }
+
+  &__old {
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    cursor: pointer;
+    background-color: $black;
+    transition: $animation_2;
+    color: $white;
+
+    &:active {
+      background-color: $black_06;
+    }
+  }
+
+  &__basket {
+  }
+
+  &__plus {
+    fill: $white;
+  }
+
+  &__navigation {
+    position: absolute;
+    top:50%;
+    z-index: 50;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+  }
+
+  &__next,
+  &__prev {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32.6px;
+    height: 32.6px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: $black;
+    cursor: pointer;
+    transition: $animation;
+    transform: translateY(-50%);
+
+    svg {
+      fill: $white;
+    }
+
+    &:active {
+      transition: none;
+      background-color: $black_hover;
+    }
+
+  }
+
+  &__next {
+    right: -42.6px;
+
+  }
+
+  &__prev {
+    left: -42.6px;
+    transform: rotate(-180deg) translateY(50%);
+  }
+}

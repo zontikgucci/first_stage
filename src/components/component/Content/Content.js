@@ -11,14 +11,14 @@ export const Content = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   useEffect(() => {
-    const slides = document.querySelectorAll('.swiper-slide')
+    const slides = document.querySelectorAll('.content__item')
     slides.forEach((slide, index) => {
       slide.style.opacity = (
         index === activeIndex ||
         index === activeIndex + 1 ||
         index === activeIndex + 2 ||
         index === activeIndex + 3
-      ) ? 1 : 0.5
+      ) ? 1 : 0.3
     });
   }, [activeIndex])
 
