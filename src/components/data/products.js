@@ -2,99 +2,85 @@ export const products = [
   {
     id: 1,
     title: 'Кровать «Триумф» 160',
-    price: {
-      priceString : '8 000 ₽',
-      priceNumber: 8000
-    },
+    price: 8000,
     checked: false,
     absent: false,
     rating: {
       rate: 3.4,
       count: 120
-    }
+    },
+    discount: 11.5
   },
   {
     id: 2,
     title: 'Матрас средний',
-    price: {
-      priceString : '10 000 ₽',
-      priceNumber: 10000
-    },
+    price: 10000,
     checked: false,
     absent: false,
     rating: {
       rate: 5,
       count: 200
-    }
+    },
+    discount: 30
   },
   {
     id: 3,
     title: 'Тумба прикроватная',
-    price: {
-      priceString : '2 000 ₽',
-      priceNumber: 2000
-    },
+    price: 2000,
     checked: false,
     absent: true,
     rating: {
       rate: 5,
       count: 77
-    }
+    },
+    discount: 10
   },
   {
     id: 4,
     title: 'Шкаф 4-дверный',
-    price: {
-      priceString : '10 000 ₽',
-      priceNumber: 10000
-    },
+    price: 10000,
     checked: false,
     absent: false,
     rating: {
       rate: 2.5,
       count: 148
-    }
+    },
+    discount: 15
   },
   {
     id: 5,
     title: 'Комод',
-    price: {
-      priceString : '2 000 ₽',
-      priceNumber: 2000
-    },
+    price: 2000,
     checked: false,
     absent: false,
     rating: {
       rate: 2.5,
       count: 234
-    }
+    },
+    discount: 5
   },
   {
     id: 6,
     title: 'Зеркало',
-    price: {
-      priceString : '2 000 ₽',
-      priceNumber: 2000
-    },
+    price: 2000,
     checked: false,
     absent: false,
     rating: {
       rate: 2,
       count: 209
-    }
+    },
+    discount: 5
   },
   {
     id: 7,
     title: 'Пуф',
-    price: {
-      priceString : '2 000 ₽',
-      priceNumber: 2000
-    },
+    price: 2000,
     checked: false,
     absent: false,
     rating: {
       rate: 3.5,
       count: 20
-    }
+    },
+    discount: 25
   },
 ]
