@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/zontikgucci/tets.git/static/css/main.d9d6c28c.css",
+    "main.js": "/zontikgucci/tets.git/static/js/main.1622dc61.js",
+    "static/media/Roboto-Medium.ttf": "/zontikgucci/tets.git/static/media/Roboto-Medium.38dc40007bffb225f36b.ttf",
+    "static/media/Roboto-Regular.ttf": "/zontikgucci/tets.git/static/media/Roboto-Regular.61be595e78ae1a1b12b7.ttf",
+    "static/media/Roboto-Black.ttf": "/zontikgucci/tets.git/static/media/Roboto-Black.41b84f386f5189a1b7ea.ttf",
+    "static/media/Roboto-Bold.ttf": "/zontikgucci/tets.git/static/media/Roboto-Bold.e0d7bd0435aced1d678b.ttf",
+    "static/media/Roboto-Light.ttf": "/zontikgucci/tets.git/static/media/Roboto-Light.58e4acb4b76e996a37e1.ttf",
+    "static/media/Roboto-Medium.woff": "/zontikgucci/tets.git/static/media/Roboto-Medium.8fe3f99a84745a795ef8.woff",
+    "static/media/Roboto-Black.woff": "/zontikgucci/tets.git/static/media/Roboto-Black.5a7e056d1f698cb70da3.woff",
+    "static/media/Roboto-Bold.woff": "/zontikgucci/tets.git/static/media/Roboto-Bold.49946fb03c6eb61475ce.woff",
+    "static/media/Roboto-Regular.woff": "/zontikgucci/tets.git/static/media/Roboto-Regular.a58c1338fa15ac8b4330.woff",
+    "static/media/Roboto-Light.woff": "/zontikgucci/tets.git/static/media/Roboto-Light.087ca26861ec61b77849.woff",
+    "static/media/Lato-Regular.ttf": "/zontikgucci/tets.git/static/media/Lato-Regular.86d742a6dc0081fd1ac7.ttf",
+    "static/media/Roboto-Medium.woff2": "/zontikgucci/tets.git/static/media/Roboto-Medium.55a1ee68e40eeca8c84e.woff2",
+    "static/media/Roboto-Black.woff2": "/zontikgucci/tets.git/static/media/Roboto-Black.88841621921568e2db10.woff2",
+    "static/media/Roboto-Bold.woff2": "/zontikgucci/tets.git/static/media/Roboto-Bold.0919898f75909abec121.woff2",
+    "static/media/Roboto-Regular.woff2": "/zontikgucci/tets.git/static/media/Roboto-Regular.727e3c83bd6c9c8e3b50.woff2",
+    "static/media/Roboto-Light.woff2": "/zontikgucci/tets.git/static/media/Roboto-Light.fb3d6a9e6f6eb05f93c6.woff2",
+    "static/media/Lato-Regular.woff": "/zontikgucci/tets.git/static/media/Lato-Regular.7da1db4cdc4ad0c3e598.woff",
+    "static/media/Lato-Regular.woff2": "/zontikgucci/tets.git/static/media/Lato-Regular.b1d221d6ada1a39eaa80.woff2",
+    "index.html": "/zontikgucci/tets.git/index.html",
+    "main.d9d6c28c.css.map": "/zontikgucci/tets.git/static/css/main.d9d6c28c.css.map",
+    "main.1622dc61.js.map": "/zontikgucci/tets.git/static/js/main.1622dc61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9d6c28c.css",
+    "static/js/main.1622dc61.js"
+  ]
+}
