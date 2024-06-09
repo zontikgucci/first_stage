@@ -32,8 +32,8 @@ export const Content = () => {
               spaceBetween={20}
               slidesPerView={4.2}
               navigation={{
-                nextEl: '.content__next',
-                prevEl: '.content__prev'
+                nextEl: '.swiperNavButton__next--content',
+                prevEl: '.swiperNavButton__prev--content'
               }}
               className='content__swiper'
               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
