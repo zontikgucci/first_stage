@@ -41,27 +41,29 @@ export const Card = ({slidesPerView, spaceBetween, nameClass, discount = false, 
               </div>
               <div className="card__img"></div>
             </a>
-            <Stack spacing={1} className="card__rating">
-            <Rating
-              name="half-rating-read"
-                defaultValue={prodict.rating.rate}
-                precision={0.1} readOnly
-                className="card__star" />
-            </Stack>
-            <a
-              href="$"
-              className="card__title"
-              onClick={e => e.preventDefault()}
-            >
-              {prodict.title}
-            </a>
-            <div className="card__value">
-              <p
-                className={`card__old ${!discount ? 'disable' : ''}`}
+            <div className="card__body">
+              <Stack spacing={1} className="card__rating">
+              <Rating
+                name="half-rating-read"
+                  defaultValue={prodict.rating.rate}
+                  precision={0.1} readOnly
+                  className="card__star" />
+              </Stack>
+              <a
+                href="$"
+                className="card__title"
+                onClick={e => e.preventDefault()}
               >
-                {`${formatNumberIntl(prodict.price + prodict.price * prodict.discount / 100)} ₽`}
-              </p>
-              <p className="card__price">{`${formatNumberIntl(prodict.price)} ₽`}</p>
+                {prodict.title}
+              </a>
+              <div className="card__value">
+                <p
+                  className={`card__old ${!discount ? 'disable' : ''}`}
+                >
+                  {`${formatNumberIntl(prodict.price + prodict.price * prodict.discount / 100)} ₽`}
+                </p>
+                <p className="card__price">{`${formatNumberIntl(prodict.price)} ₽`}</p>
+              </div>
             </div>
             <button className="card__button">
                 <p className="card__basket">В корзину</p>
