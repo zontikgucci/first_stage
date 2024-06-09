@@ -62,7 +62,7 @@ export const Compilation = ({ dataProducts }) => {
               </svg>
             </button>
           </div>
-          {/* <Card /> */}
+          <Card />
         </div>
       </div>
     </section>
