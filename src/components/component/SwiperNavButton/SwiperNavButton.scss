@@ -1,0 +1,83 @@
+@import '../../../styles/variables';
+
+
+.swiperNavButton {
+
+  &__navigation {
+    position: absolute;
+    top:50%;
+    z-index: 50;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+  }
+
+  &__next,
+  &__prev {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: $black;
+    cursor: pointer;
+    transition: $animation;
+    transform: translateY(-50%);
+
+    &--card {
+      width: 32.6px;
+      height: 32.6px;
+    }
+
+    &--variation {
+      width: 45px;
+      height: 45px;
+    }
+
+    svg {
+      fill: $white;
+    }
+
+    &:active {
+      transition: none;
+      background-color: $black_hover;
+    }
+
+    &--content {
+      &.swiper-button-disabled {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__next {
+    right: -50px;
+
+    &--card {
+      right: -40.6px;
+    }
+
+    &--variation {
+      right: -85px;
+    }
+  }
+
+  &__prev {
+    left: -50px;
+    transform: rotate(-180deg) translateY(50%);
+
+    &--card {
+      left: -40.6px;
+    }
+
+    &--variation {
+      left: -85px;
+    }
+  }
+}

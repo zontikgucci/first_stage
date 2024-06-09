@@ -2,6 +2,7 @@ import {useState} from 'react';
 import { Card } from "../Card/Card";
 
 import './compilation.scss'
+import { formatNumberIntl } from '../../../core/function';
 
 export const Compilation = ({ dataProducts }) => {
   const [checkedIds, setCheckedIds] = useState([]);
@@ -14,7 +15,7 @@ export const Compilation = ({ dataProducts }) => {
     : [...prevCheckedIds, productId];
 
     const newSumProducts = dataProducts.reduce((sum, product) => {
-      return newCheckedIds.includes(product.id) ? sum + product.price.priceNumber : sum;
+      return newCheckedIds.includes(product.id) ? sum + product.price : sum;
     }, 0)
 
     setSumProducts(newSumProducts)
@@ -34,24 +35,24 @@ export const Compilation = ({ dataProducts }) => {
               className={`compilation__item ${product.absent ? 'compilation__item--absent' : ''}`}
               key={product.id}
               >
-              <h3 className="compilation__name">{product.title}</h3>
-              <div className="compilation__info">
-              <p className="compilation__price">{product.price.priceString}</p>
-              <input
-              type="checkbox"
-              className="compilation__checked"
-              checked={checkedIds.includes(product.id)}
-              onChange={() => handleCheckboxChange(product.id)}
-              id={`checkbox-${product.id}`}
-              name="productCheckbox"
-              />
-              </div>
+                <h3 className="compilation__name">{product.title}</h3>
+                <div className="compilation__info">
+                <p className="compilation__price">{`${formatNumberIntl(product.price)} ₽`}</p>
+                <input
+                type="checkbox"
+                className="compilation__checked"
+                checked={checkedIds.includes(product.id)}
+                onChange={() => handleCheckboxChange(product.id)}
+                id={`checkbox-${product.id}`}
+                name="productCheckbox"
+                />
+                </div>
               </label>
               ))}
             <div className="compilation__item">
               <h3 className="compilation__name">Итого</h3>
               <div className="compilation__info">
-                  <p className="compilation__price">{`${sumProducts} ₽`}</p>
+                  <p className="compilation__price">{`${formatNumberIntl(sumProducts)} ₽`}</p>
                   <span className="compilation__checked compilation__checked--none"></span>
                 </div>
             </div>
@@ -62,7 +63,13 @@ export const Compilation = ({ dataProducts }) => {
               </svg>
             </button>
           </div>
-          <Card />
+          <Card
+            spaceBetween={20}
+            slidesPerView={3}
+            nameClass={'card'}
+            discount={false}
+            loop={true}
+            />
         </div>
       </div>
     </section>

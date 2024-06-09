@@ -3,6 +3,7 @@
 .compilation {
   padding: 80px 0;
   background-color: $silver;
+  margin-bottom: 80px;
 
   &__title {
     margin-bottom: 40px;
@@ -21,7 +22,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-bottom: 20px;
     padding: 10px 0;
     cursor: pointer;
     position: relative;

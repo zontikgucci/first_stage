@@ -5,6 +5,7 @@ import { Compilation } from '../component/Compilation/Compilation'
 import { products } from '../data/products'
 
 import './contents.scss'
+import { Variation } from '../component/Variation/Variation'
 
 
 export const Contents = () => {
@@ -13,7 +14,7 @@ export const Contents = () => {
       <Head head={'Спальня'}/>
       <Content />
       <Compilation dataProducts={products}/>
-      <section className='variation'></section>
+      <Variation/>
     </main>
   )
 }
