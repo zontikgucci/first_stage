@@ -1,6 +1,7 @@
 {
   "name": "fist_stage",
   "version": "0.1.0",
+  "homepage": "https://zontikgucci.github.io/first_stage",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
