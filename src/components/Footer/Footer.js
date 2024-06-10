@@ -8,53 +8,56 @@ export const Footer = () => {
   const [phoneActive, setPhoneActive] = useState(false);
   const [emailActive, setEmailActive] = useState(false);
 
-  const [inputName, setInputName] = useState('')
-  const [inputPhone, setInputPhone] = useState('')
-  const [inputEmail, setInputEmail] = useState('')
+  const [inputName, setInputName] = useState('');
+  const [inputPhone, setInputPhone] = useState('');
+  const [inputEmail, setInputEmail] = useState('');
 
-  const [sub, setSub] = useState(false)
+  const [sub, setSub] = useState(false);
 
+  const [isPhoneValid, setIsPhoneValid] = useState(false);
+  const [isEmailValid, setIsEmailValid] = useState(false);
 
-  const handleInputChange = (setInput) => (event) => {
-    const { value } = event.target
-    // setIsValid(validateEmail(value))
-    setInput(value)
+  const validatePhone = (phone) => {
+    const phoneRegex = /^(\+7|8)?\d{11}$/;
+    return phoneRegex.test(phone);
   }
 
-  const handleFocus = (nameActive) => () => nameActive(true)
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
 
-  const handleBlur = (nameActive, setNameActive) => () => {
-    if (nameActive.trim() === '') {
-      setNameActive(false)
+  const handleInputChange = (setInput, validator, setValid) => (event) => {
+    const { value } = event.target;
+    setInput(value);
+    if (validator) {
+      setValid(validator(value));
+    }
+  }
+
+  const handleFocus = (setActive) => () => setActive(true);
+
+  const handleBlur = (input, setActive) => () => {
+    if (input.trim() === '') {
+      setActive(false);
     }
   }
 
   const handleClick = (e) => {
-    if (inputName.trim() && inputPhone.trim() && inputEmail.trim()){
-      e.preventDefault()
+    if (inputName.trim() && inputPhone.trim() && inputEmail.trim()) {
+      e.preventDefault();
 
-      setSub(true)
-      setNameActive(false)
-      setPhoneActive(false)
-      setEmailActive(false)
+      setSub(true);
+      setNameActive(false);
+      setPhoneActive(false);
+      setEmailActive(false);
 
-      setInputName('')
-      setInputPhone('')
-      setInputEmail('')
-      setTimeout(() => setSub(false), 1000)
+      setInputName('');
+      setInputPhone('');
+      setInputEmail('');
+      setTimeout(() => setSub(false), 1000);
     }
   }
-
-  // валидация
-  // const [isValid, setIsValid] = useState(true)
-
-  // const EMAIL_REGEXP = /^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u;
-
-  // const validateEmail = (value) => {
-  //   console.log(EMAIL_REGEXP.test(value))
-  //   return EMAIL_REGEXP.test(value);
-  // }
-
 
   return (
     <footer className='footer'>
@@ -94,9 +97,10 @@ export const Footer = () => {
                     type="tel" id="phone"
                     name="phone" required
                     value={inputPhone}
-                    onChange={handleInputChange(setInputPhone)}
+                    onChange={handleInputChange(setInputPhone, validatePhone, setIsPhoneValid)}
                     onFocus={handleFocus(setPhoneActive)}
                     onBlur={handleBlur(inputPhone, setPhoneActive)}
+                    style={{ color: isPhoneValid ? 'green' : 'red' }}
                   />
                 </div>
                 <div className='form__group'>
@@ -111,15 +115,16 @@ export const Footer = () => {
                     type="email" id="email"
                     name="email" required
                     value={inputEmail}
-                    onChange={handleInputChange(setInputEmail)}
+                    onChange={handleInputChange(setInputEmail, validateEmail, setIsEmailValid)}
                     onFocus={handleFocus(setEmailActive)}
                     onBlur={handleBlur(inputEmail, setEmailActive)}
-                    // style={{color : isValid ? 'green' : 'red'}}
+                    style={{ color: isEmailValid ? 'green' : 'red' }}
                   />
                 </div>
                 <button
                   className='form__button'
                   onClick={handleClick}
+                  disabled={!isPhoneValid || !isEmailValid}
                 >
                   Подписаться
                 </button>
